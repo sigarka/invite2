@@ -202,12 +202,6 @@
         const envelope = document.getElementById('envelope');
         const invitation = document.getElementById('invitation');
 
-        // Автоматически открываем если есть параметр type в URL
-        if (urlParams.has('type')) {
-            envelope.classList.add('open');
-            invitation.style.display = 'block';
-        }
-
         // Ручное открытие/закрытие по клику
         envelope.addEventListener('click', function() {
             this.classList.toggle('open');
